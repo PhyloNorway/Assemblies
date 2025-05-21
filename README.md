@@ -14,7 +14,7 @@ You must have in your home directory a `.ENA_passwd` file containing one line pe
 porject_name:ena_login:ena_password
 ```
 
-example : 
+example: 
 
 ```
 PhyloNorway:Webin-00000:xxyyyzzz
