@@ -55,3 +55,8 @@ code {
 .emoji {
   font-size: 1.1em;
 }
+
+#graph-container {
+  transform: scale(0.5);   /* Réduction à 50 % */
+  transform-origin: top left;
+}

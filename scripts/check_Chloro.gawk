@@ -137,10 +137,14 @@ END {
 
   print ""
 
-  if (region_order_found_count < 4) {
+  if (region_order_found_count < 4 && region_order_found_count > 0) {
     print "- ❌ Incomplete set of LSC/IR/SSC regions"
     exit_status = 1
   } else {
+    if (region_order_found_count == 0 ) {
+      print  "- ❌ No LSC/IR/SSC regions found in the genome."
+    } else {
+      print   "- ✅ LSC/IR/SSC regions found in the genome."
     correct_order = 1
     for (i = 1; i <= 4; i++) {
       if (region_order_found[i] != region_order_expected[i]) {
@@ -167,10 +171,12 @@ END {
     } else {
       print "- ✅ IRA and IRB have equal size"
     }
+    }
   }
 
   if (graph != "") { 
-      print  "   <svg></svg> "
+      print  "\n## Chloroplast Genome assembly map\n"
+      print  "   <div id=\"graph-container\"><svg></svg></div> "
       print  "  "
       print  "   <script src=\"https://d3js.org/d3.v7.min.js\"></script> "
       print  "   <script> "
@@ -288,6 +294,7 @@ END {
       print  "   </script> "
     }
 
+  print ""
 
   print "\n## Protein complexes\n"
 
