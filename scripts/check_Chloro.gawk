@@ -61,11 +61,21 @@ BEGIN {
 
   exit_status = 0
 
+  graph = ""
   delete genes
   delete trnas
   delete locus_tags
   delete trna_anticodons_raw
 
+}
+
+(NR > FNR) {
+  if (FNR == 1) {
+    graph = $0
+  } else {
+    graph = graph "\n" $0
+  }
+  next
 }
 
 /^FT/ {
@@ -158,6 +168,126 @@ END {
       print "- ✅ IRA and IRB have equal size"
     }
   }
+
+  if (graph != "") { 
+      print  "   <svg></svg> "
+      print  "  "
+      print  "   <script src=\"https://d3js.org/d3.v7.min.js\"></script> "
+      print  "   <script> "
+      print  "     const graph = " graph "; "
+      print  "  "
+      print  "     graph.links.forEach(function(link) { "
+      print  "       link.curve = link.label.startsWith('-') ? -0.4 : 0.4; "
+      print  "     }); "
+      print  "  "
+      print  "     const width = window.innerWidth; "
+      print  "     const height = window.innerHeight; "
+      print  "    "
+      print  "     const svg = d3.select(\"svg\") "
+      print  "       .attr(\"viewBox\", [0, 0, width, height]) "
+      print  "       .append(\"g\") "
+      print  "       .attr(\"transform\", `translate(${width / 2}, ${height / 2})`); "
+      print  "  "
+      print  "     const linkCounts = {}; "
+      print  "     graph.links.forEach(d => { "
+      print  "       const key = [d.source, d.target].join(\"-\"); "
+      print  "       linkCounts[key] = (linkCounts[key] || 0) + 1; "
+      print  "     }); "
+      print  "  "
+      print  "     const curvedPairs = new Set(); "
+      print  "     graph.links.forEach(d => { "
+      print  "       const key = [d.source, d.target].join(\"-\"); "
+      print  "       if (linkCounts[key] > 1) { "
+      print  "         curvedPairs.add(key); "
+      print  "       } "
+      print  "     }); "
+      print  "  "
+      print  "  "
+      print  "     const simulation = d3.forceSimulation(graph.nodes) "
+      print  "       .force(\"link\", d3.forceLink(graph.links).id(d => d.id).distance(120)) "
+      print  "       .force(\"charge\", d3.forceManyBody().strength(-400)) "
+      print  "       .force(\"center\", d3.forceCenter(0, 0)); "
+      print  "  "
+      print  "     const link = svg.append(\"g\") "
+      print  "       .attr(\"stroke\", \"#999\") "
+      print  "       .selectAll(\"path\") "
+      print  "       .data(graph.links) "
+      print  "       .join(\"path\") "
+      print  "       .attr(\"stroke\", d => d.fill || \"#999\") "
+      print  "       .attr(\"stroke-width\", d => Math.max(1, d.weight / 100)) "
+      print  "       .attr(\"stroke-dasharray\", d => d.in_path === false ? \"4,2\" : null) "
+      print  "       .attr(\"opacity\", d => d.in_path === false ? 0.3 : 1) "
+      print  "       .attr(\"fill\", \"none\") "
+      print  "       .attr(\"class\", \"link\"); "
+      print  "  "
+      print  "     const edgeLabel = svg.append(\"g\") "
+      print  "       .selectAll(\"text\") "
+      print  "       .data(graph.links) "
+      print  "       .join(\"text\") "
+      print  "       .attr(\"class\", \"label\") "
+      print  "       .attr(\"opacity\", d => d.in_path === false ? 0.3 : 1) "
+      print  "       .text(d => d.label); "
+      print  "  "
+      print  "     const node = svg.append(\"g\") "
+      print  "       .selectAll(\"circle\") "
+      print  "       .data(graph.nodes) "
+      print  "       .join(\"circle\") "
+      print  "       .attr(\"r\", 6) "
+      print  "       .attr(\"fill\", \"#666\") "
+      print  "       .call(drag(simulation)); "
+      print  "  "
+      print  "     simulation.on(\"tick\", () => { "
+      print  "       link.attr(\"d\", d => { "
+      print  "         const dx = d.target.x - d.source.x; "
+      print  "         const dy = d.target.y - d.source.y; "
+      print  "         const dr = Math.sqrt(dx * dx + dy * dy); "
+      print  "         const curve = curvedPairs.has(`${d.source.id}-${d.target.id}`) ? d.curve : 0; "
+      print  "         const curvedRadius = dr * Math.abs(curve); "
+      print  "         const sweep = curve > 0 ? 1 : 0; "
+      print  "         return curve "
+      print  "           ? `M${d.source.x},${d.source.y}A${curvedRadius},${curvedRadius} 0 0,${sweep} ${d.target.x},${d.target.y}` "
+      print  "           : `M${d.source.x},${d.source.y}L${d.target.x},${d.target.y}`; "
+      print  "       }); "
+      print  "  "
+      print  "       edgeLabel "
+      print  "         .attr(\"x\", d => { "
+      print  "           const dx = d.target.x - d.source.x; "
+      print  "           const dy = d.target.y - d.source.y; "
+      print  "           const midX = (d.source.x + d.target.x) / 2; "
+      print  "           const offsetX = -dy * d.curve * 0.5; // orthogonal offset "
+      print  "           return midX + offsetX; "
+      print  "         }) "
+      print  "         .attr(\"y\", d => { "
+      print  "           const dx = d.target.x - d.source.x; "
+      print  "           const dy = d.target.y - d.source.y; "
+      print  "           const midY = (d.source.y + d.target.y) / 2; "
+      print  "           const offsetY = dx * d.curve * 0.5; // orthogonal offset "
+      print  "           return midY + offsetY; "
+      print  "         }); "
+      print  "  "
+      print  "       node.attr(\"cx\", d => d.x).attr(\"cy\", d => d.y); "
+      print  "     }); "
+      print  "  "
+      print  "     function drag(simulation) { "
+      print  "       return d3.drag() "
+      print  "         .on(\"start\", event => { "
+      print  "           if (!event.active) simulation.alphaTarget(0.3).restart(); "
+      print  "           event.subject.fx = event.subject.x; "
+      print  "           event.subject.fy = event.subject.y; "
+      print  "         }) "
+      print  "         .on(\"drag\", event => { "
+      print  "           event.subject.fx = event.x; "
+      print  "           event.subject.fy = event.y; "
+      print  "         }) "
+      print  "         .on(\"end\", event => { "
+      print  "           if (!event.active) simulation.alphaTarget(0); "
+      print  "           event.subject.fx = null; "
+      print  "           event.subject.fy = null; "
+      print  "         }); "
+      print  "     } "
+      print  "   </script> "
+    }
+
 
   print "\n## Protein complexes\n"
 
