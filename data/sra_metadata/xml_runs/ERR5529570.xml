@@ -1,0 +1,68 @@
+<RUN_SET>
+<RUN accession="ERR5529570" alias="run_CDM_AELOSDA_1_CBNLDACXX.12BA255" center_name="Genoscope" run_center="GSC" run_date="2018-06-06T00:00:00">
+  <IDENTIFIERS>
+    <PRIMARY_ID>ERR5529570</PRIMARY_ID>
+    <SUBMITTER_ID namespace="Genoscope">run_CDM_AELOSDA_1_CBNLDACXX.12BA255</SUBMITTER_ID>
+  </IDENTIFIERS>
+  <TITLE>Illumina HiSeq 2500 paired end sequencing; Lysimachia nemorum_Illumina_DA</TITLE>
+  <EXPERIMENT_REF accession="ERX5310031">
+    <IDENTIFIERS>
+      <PRIMARY_ID>ERX5310031</PRIMARY_ID>
+    </IDENTIFIERS>
+  </EXPERIMENT_REF>
+  <DATA_BLOCK>
+    <FILES>
+      <FILE checksum="8474cb2acacd432fa8a3bc4b356c29ae" checksum_method="MD5" filename="run/ERR552/ERR5529570/CDM_AELOSDA_1_2_CBNLDACXX.12BA255_clean.fastq.gz" filetype="fastq" quality_scoring_system="phred">
+        <READ_LABEL>F</READ_LABEL>
+        <READ_LABEL>R</READ_LABEL>
+      </FILE>
+      <FILE checksum="4ba3d329b4eba65e8a8b9d3e301001e0" checksum_method="MD5" filename="run/ERR552/ERR5529570/CDM_AELOSDA_1_1_CBNLDACXX.12BA255_clean.fastq.gz" filetype="fastq" quality_scoring_system="phred">
+        <READ_LABEL>F</READ_LABEL>
+        <READ_LABEL>R</READ_LABEL>
+      </FILE>
+    </FILES>
+  </DATA_BLOCK>
+  <RUN_LINKS>
+    <RUN_LINK>
+      <XREF_LINK>
+        <DB>ENA-SUBMISSION</DB>
+        <ID>ERA3689555</ID>
+      </XREF_LINK>
+    </RUN_LINK>
+    <RUN_LINK>
+      <XREF_LINK>
+        <DB>ENA-STUDY</DB>
+        <ID>ERP127839</ID>
+      </XREF_LINK>
+    </RUN_LINK>
+    <RUN_LINK>
+      <XREF_LINK>
+        <DB>ENA-SAMPLE</DB>
+        <ID>ERS5887474</ID>
+      </XREF_LINK>
+    </RUN_LINK>
+    <RUN_LINK>
+      <XREF_LINK>
+        <DB>ENA-FASTQ-FILES</DB>
+        <ID><![CDATA[https://www.ebi.ac.uk/ena/portal/api/filereport?accession=ERR5529570&result=read_run&fields=run_accession,fastq_ftp,fastq_md5,fastq_bytes]]></ID>
+      </XREF_LINK>
+    </RUN_LINK>
+    <RUN_LINK>
+      <XREF_LINK>
+        <DB>ENA-SUBMITTED-FILES</DB>
+        <ID><![CDATA[https://www.ebi.ac.uk/ena/portal/api/filereport?accession=ERR5529570&result=read_run&fields=run_accession,submitted_ftp,submitted_md5,submitted_bytes,submitted_format]]></ID>
+      </XREF_LINK>
+    </RUN_LINK>
+  </RUN_LINKS>
+  <RUN_ATTRIBUTES>
+    <RUN_ATTRIBUTE>
+      <TAG>ENA-FIRST-PUBLIC</TAG>
+      <VALUE>2021-08-17</VALUE>
+    </RUN_ATTRIBUTE>
+    <RUN_ATTRIBUTE>
+      <TAG>ENA-LAST-UPDATE</TAG>
+      <VALUE>2021-08-17</VALUE>
+    </RUN_ATTRIBUTE>
+  </RUN_ATTRIBUTES>
+</RUN>
+</RUN_SET>

@@ -1,0 +1,68 @@
+<RUN_SET>
+<RUN accession="ERR5529750" alias="run_BXA_BTIOSDA_1_BBHJP.12BA136" center_name="Genoscope" run_center="GSC" run_date="2017-10-20T00:00:00">
+  <IDENTIFIERS>
+    <PRIMARY_ID>ERR5529750</PRIMARY_ID>
+    <SUBMITTER_ID namespace="Genoscope">run_BXA_BTIOSDA_1_BBHJP.12BA136</SUBMITTER_ID>
+  </IDENTIFIERS>
+  <TITLE>Illumina MiSeq paired end sequencing; Arabis hirsuta var. subalpestre_Illumina_DA</TITLE>
+  <EXPERIMENT_REF accession="ERX5310211">
+    <IDENTIFIERS>
+      <PRIMARY_ID>ERX5310211</PRIMARY_ID>
+    </IDENTIFIERS>
+  </EXPERIMENT_REF>
+  <DATA_BLOCK>
+    <FILES>
+      <FILE checksum="71590ac7d361c5ee3fa995ef057bd14c" checksum_method="MD5" filename="run/ERR552/ERR5529750/BXA_BTIOSDA_1_2_BBHJP.12BA136_clean.fastq.gz" filetype="fastq" quality_scoring_system="phred">
+        <READ_LABEL>F</READ_LABEL>
+        <READ_LABEL>R</READ_LABEL>
+      </FILE>
+      <FILE checksum="2e1c0138c5e6b9b2689d2503f86094bc" checksum_method="MD5" filename="run/ERR552/ERR5529750/BXA_BTIOSDA_1_1_BBHJP.12BA136_clean.fastq.gz" filetype="fastq" quality_scoring_system="phred">
+        <READ_LABEL>F</READ_LABEL>
+        <READ_LABEL>R</READ_LABEL>
+      </FILE>
+    </FILES>
+  </DATA_BLOCK>
+  <RUN_LINKS>
+    <RUN_LINK>
+      <XREF_LINK>
+        <DB>ENA-SUBMISSION</DB>
+        <ID>ERA3689555</ID>
+      </XREF_LINK>
+    </RUN_LINK>
+    <RUN_LINK>
+      <XREF_LINK>
+        <DB>ENA-STUDY</DB>
+        <ID>ERP127839</ID>
+      </XREF_LINK>
+    </RUN_LINK>
+    <RUN_LINK>
+      <XREF_LINK>
+        <DB>ENA-SAMPLE</DB>
+        <ID>ERS5888445</ID>
+      </XREF_LINK>
+    </RUN_LINK>
+    <RUN_LINK>
+      <XREF_LINK>
+        <DB>ENA-FASTQ-FILES</DB>
+        <ID><![CDATA[https://www.ebi.ac.uk/ena/portal/api/filereport?accession=ERR5529750&result=read_run&fields=run_accession,fastq_ftp,fastq_md5,fastq_bytes]]></ID>
+      </XREF_LINK>
+    </RUN_LINK>
+    <RUN_LINK>
+      <XREF_LINK>
+        <DB>ENA-SUBMITTED-FILES</DB>
+        <ID><![CDATA[https://www.ebi.ac.uk/ena/portal/api/filereport?accession=ERR5529750&result=read_run&fields=run_accession,submitted_ftp,submitted_md5,submitted_bytes,submitted_format]]></ID>
+      </XREF_LINK>
+    </RUN_LINK>
+  </RUN_LINKS>
+  <RUN_ATTRIBUTES>
+    <RUN_ATTRIBUTE>
+      <TAG>ENA-FIRST-PUBLIC</TAG>
+      <VALUE>2021-08-17</VALUE>
+    </RUN_ATTRIBUTE>
+    <RUN_ATTRIBUTE>
+      <TAG>ENA-LAST-UPDATE</TAG>
+      <VALUE>2021-08-17</VALUE>
+    </RUN_ATTRIBUTE>
+  </RUN_ATTRIBUTES>
+</RUN>
+</RUN_SET>

@@ -1,0 +1,68 @@
+<RUN_SET>
+<RUN accession="ERR5554434" alias="run_CDM_AHNOSDA_4_CBNLDACXX.12BA373" center_name="Genoscope" run_center="GSC" run_date="2018-06-06T00:00:00">
+  <IDENTIFIERS>
+    <PRIMARY_ID>ERR5554434</PRIMARY_ID>
+    <SUBMITTER_ID namespace="Genoscope">run_CDM_AHNOSDA_4_CBNLDACXX.12BA373</SUBMITTER_ID>
+  </IDENTIFIERS>
+  <TITLE>Illumina HiSeq 2500 paired end sequencing; Crataegus rhipidophylla_Illumina_DA</TITLE>
+  <EXPERIMENT_REF accession="ERX5334476">
+    <IDENTIFIERS>
+      <PRIMARY_ID>ERX5334476</PRIMARY_ID>
+    </IDENTIFIERS>
+  </EXPERIMENT_REF>
+  <DATA_BLOCK>
+    <FILES>
+      <FILE checksum="816226631aae14e158eefc2640871cc0" checksum_method="MD5" filename="run/ERR555/ERR5554434/CDM_AHNOSDA_4_2_CBNLDACXX.12BA373_clean.fastq.gz" filetype="fastq" quality_scoring_system="phred">
+        <READ_LABEL>F</READ_LABEL>
+        <READ_LABEL>R</READ_LABEL>
+      </FILE>
+      <FILE checksum="a9fd9d3ef9a4f898b8a51b79d6a84cef" checksum_method="MD5" filename="run/ERR555/ERR5554434/CDM_AHNOSDA_4_1_CBNLDACXX.12BA373_clean.fastq.gz" filetype="fastq" quality_scoring_system="phred">
+        <READ_LABEL>F</READ_LABEL>
+        <READ_LABEL>R</READ_LABEL>
+      </FILE>
+    </FILES>
+  </DATA_BLOCK>
+  <RUN_LINKS>
+    <RUN_LINK>
+      <XREF_LINK>
+        <DB>ENA-SUBMISSION</DB>
+        <ID>ERA3698877</ID>
+      </XREF_LINK>
+    </RUN_LINK>
+    <RUN_LINK>
+      <XREF_LINK>
+        <DB>ENA-STUDY</DB>
+        <ID>ERP127839</ID>
+      </XREF_LINK>
+    </RUN_LINK>
+    <RUN_LINK>
+      <XREF_LINK>
+        <DB>ENA-SAMPLE</DB>
+        <ID>ERS5888499</ID>
+      </XREF_LINK>
+    </RUN_LINK>
+    <RUN_LINK>
+      <XREF_LINK>
+        <DB>ENA-FASTQ-FILES</DB>
+        <ID><![CDATA[https://www.ebi.ac.uk/ena/portal/api/filereport?accession=ERR5554434&result=read_run&fields=run_accession,fastq_ftp,fastq_md5,fastq_bytes]]></ID>
+      </XREF_LINK>
+    </RUN_LINK>
+    <RUN_LINK>
+      <XREF_LINK>
+        <DB>ENA-SUBMITTED-FILES</DB>
+        <ID><![CDATA[https://www.ebi.ac.uk/ena/portal/api/filereport?accession=ERR5554434&result=read_run&fields=run_accession,submitted_ftp,submitted_md5,submitted_bytes,submitted_format]]></ID>
+      </XREF_LINK>
+    </RUN_LINK>
+  </RUN_LINKS>
+  <RUN_ATTRIBUTES>
+    <RUN_ATTRIBUTE>
+      <TAG>ENA-FIRST-PUBLIC</TAG>
+      <VALUE>2021-08-17</VALUE>
+    </RUN_ATTRIBUTE>
+    <RUN_ATTRIBUTE>
+      <TAG>ENA-LAST-UPDATE</TAG>
+      <VALUE>2021-08-17</VALUE>
+    </RUN_ATTRIBUTE>
+  </RUN_ATTRIBUTES>
+</RUN>
+</RUN_SET>

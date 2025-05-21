@@ -1,0 +1,68 @@
+<RUN_SET>
+<RUN accession="ERR5555342" alias="run_BXA_BDBOSDA_1_CBH46ACXX.12BA089" center_name="Genoscope" run_center="GSC" run_date="2017-11-08T00:00:00">
+  <IDENTIFIERS>
+    <PRIMARY_ID>ERR5555342</PRIMARY_ID>
+    <SUBMITTER_ID namespace="Genoscope">run_BXA_BDBOSDA_1_CBH46ACXX.12BA089</SUBMITTER_ID>
+  </IDENTIFIERS>
+  <TITLE>Illumina HiSeq 2500 paired end sequencing; Primula stricta_Illumina_DA</TITLE>
+  <EXPERIMENT_REF accession="ERX5335384">
+    <IDENTIFIERS>
+      <PRIMARY_ID>ERX5335384</PRIMARY_ID>
+    </IDENTIFIERS>
+  </EXPERIMENT_REF>
+  <DATA_BLOCK>
+    <FILES>
+      <FILE checksum="6788f61fa26aa3eb31435324121dfe6c" checksum_method="MD5" filename="run/ERR555/ERR5555342/BXA_BDBOSDA_1_2_CBH46ACXX.12BA089_clean.fastq.gz" filetype="fastq" quality_scoring_system="phred">
+        <READ_LABEL>F</READ_LABEL>
+        <READ_LABEL>R</READ_LABEL>
+      </FILE>
+      <FILE checksum="4fce3fe9a06aff19a70446a97b20330b" checksum_method="MD5" filename="run/ERR555/ERR5555342/BXA_BDBOSDA_1_1_CBH46ACXX.12BA089_clean.fastq.gz" filetype="fastq" quality_scoring_system="phred">
+        <READ_LABEL>F</READ_LABEL>
+        <READ_LABEL>R</READ_LABEL>
+      </FILE>
+    </FILES>
+  </DATA_BLOCK>
+  <RUN_LINKS>
+    <RUN_LINK>
+      <XREF_LINK>
+        <DB>ENA-SUBMISSION</DB>
+        <ID>ERA3698878</ID>
+      </XREF_LINK>
+    </RUN_LINK>
+    <RUN_LINK>
+      <XREF_LINK>
+        <DB>ENA-STUDY</DB>
+        <ID>ERP127839</ID>
+      </XREF_LINK>
+    </RUN_LINK>
+    <RUN_LINK>
+      <XREF_LINK>
+        <DB>ENA-SAMPLE</DB>
+        <ID>ERS5889157</ID>
+      </XREF_LINK>
+    </RUN_LINK>
+    <RUN_LINK>
+      <XREF_LINK>
+        <DB>ENA-FASTQ-FILES</DB>
+        <ID><![CDATA[https://www.ebi.ac.uk/ena/portal/api/filereport?accession=ERR5555342&result=read_run&fields=run_accession,fastq_ftp,fastq_md5,fastq_bytes]]></ID>
+      </XREF_LINK>
+    </RUN_LINK>
+    <RUN_LINK>
+      <XREF_LINK>
+        <DB>ENA-SUBMITTED-FILES</DB>
+        <ID><![CDATA[https://www.ebi.ac.uk/ena/portal/api/filereport?accession=ERR5555342&result=read_run&fields=run_accession,submitted_ftp,submitted_md5,submitted_bytes,submitted_format]]></ID>
+      </XREF_LINK>
+    </RUN_LINK>
+  </RUN_LINKS>
+  <RUN_ATTRIBUTES>
+    <RUN_ATTRIBUTE>
+      <TAG>ENA-FIRST-PUBLIC</TAG>
+      <VALUE>2021-08-17</VALUE>
+    </RUN_ATTRIBUTE>
+    <RUN_ATTRIBUTE>
+      <TAG>ENA-LAST-UPDATE</TAG>
+      <VALUE>2021-08-17</VALUE>
+    </RUN_ATTRIBUTE>
+  </RUN_ATTRIBUTES>
+</RUN>
+</RUN_SET>

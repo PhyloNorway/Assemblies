@@ -1,0 +1,89 @@
+<RUN_SET>
+<RUN accession="ERR7254756" alias="ena-RUN-TAB-09-11-2021-13:44:33:435-31043" center_name="Tromsoe University Museum">
+  <IDENTIFIERS>
+    <PRIMARY_ID>ERR7254756</PRIMARY_ID>
+    <SUBMITTER_ID namespace="Tromsoe University Museum">ena-RUN-TAB-09-11-2021-13:44:33:435-31043</SUBMITTER_ID>
+  </IDENTIFIERS>
+  <TITLE>Illumina HiSeq 2000 paired end sequencing</TITLE>
+  <EXPERIMENT_REF accession="ERX6824160">
+    <IDENTIFIERS>
+      <PRIMARY_ID>ERX6824160</PRIMARY_ID>
+    </IDENTIFIERS>
+  </EXPERIMENT_REF>
+  <SPOT_DESCRIPTOR>
+    <SPOT_DECODE_SPEC>
+      <READ_SPEC>
+        <READ_INDEX>0</READ_INDEX>
+        <READ_LABEL>F1</READ_LABEL>
+        <READ_CLASS>Application Read</READ_CLASS>
+        <READ_TYPE>Forward</READ_TYPE>
+        <BASE_COORD>1</BASE_COORD>
+      </READ_SPEC>
+      <READ_SPEC>
+        <READ_INDEX>1</READ_INDEX>
+        <READ_LABEL>R2</READ_LABEL>
+        <READ_CLASS>Application Read</READ_CLASS>
+        <READ_TYPE>Reverse</READ_TYPE>
+        <RELATIVE_ORDER follows_read_index="0"/>
+      </READ_SPEC>
+    </SPOT_DECODE_SPEC>
+  </SPOT_DESCRIPTOR>
+  <PLATFORM>
+    <ILLUMINA>
+      <INSTRUMENT_MODEL>Illumina HiSeq 2000</INSTRUMENT_MODEL>
+    </ILLUMINA>
+  </PLATFORM>
+  <DATA_BLOCK>
+    <FILES>
+      <FILE checksum="311a9db38c5049d95810d05326815805" checksum_method="MD5" filename="run/ERR725/ERR7254756/CDM_AZBOSDA_1_1_CC9G4ACXX.12BA383_clean.fastq.gz" filetype="fastq" quality_scoring_system="phred">
+        <READ_LABEL>F1</READ_LABEL>
+      </FILE>
+      <FILE checksum="ebca692a09122fba63157007da999902" checksum_method="MD5" filename="run/ERR725/ERR7254756/CDM_AZBOSDA_1_2_CC9G4ACXX.12BA383_clean.fastq.gz" filetype="fastq" quality_scoring_system="phred">
+        <READ_LABEL>R2</READ_LABEL>
+      </FILE>
+    </FILES>
+  </DATA_BLOCK>
+  <RUN_LINKS>
+    <RUN_LINK>
+      <XREF_LINK>
+        <DB>ENA-SUBMISSION</DB>
+        <ID>ERA7125420</ID>
+      </XREF_LINK>
+    </RUN_LINK>
+    <RUN_LINK>
+      <XREF_LINK>
+        <DB>ENA-STUDY</DB>
+        <ID>ERP133089</ID>
+      </XREF_LINK>
+    </RUN_LINK>
+    <RUN_LINK>
+      <XREF_LINK>
+        <DB>ENA-SAMPLE</DB>
+        <ID>ERS8536882</ID>
+      </XREF_LINK>
+    </RUN_LINK>
+    <RUN_LINK>
+      <XREF_LINK>
+        <DB>ENA-FASTQ-FILES</DB>
+        <ID><![CDATA[https://www.ebi.ac.uk/ena/portal/api/filereport?accession=ERR7254756&result=read_run&fields=run_accession,fastq_ftp,fastq_md5,fastq_bytes]]></ID>
+      </XREF_LINK>
+    </RUN_LINK>
+    <RUN_LINK>
+      <XREF_LINK>
+        <DB>ENA-SUBMITTED-FILES</DB>
+        <ID><![CDATA[https://www.ebi.ac.uk/ena/portal/api/filereport?accession=ERR7254756&result=read_run&fields=run_accession,submitted_ftp,submitted_md5,submitted_bytes,submitted_format]]></ID>
+      </XREF_LINK>
+    </RUN_LINK>
+  </RUN_LINKS>
+  <RUN_ATTRIBUTES>
+    <RUN_ATTRIBUTE>
+      <TAG>ENA-FIRST-PUBLIC</TAG>
+      <VALUE>2021-11-09</VALUE>
+    </RUN_ATTRIBUTE>
+    <RUN_ATTRIBUTE>
+      <TAG>ENA-LAST-UPDATE</TAG>
+      <VALUE>2021-11-09</VALUE>
+    </RUN_ATTRIBUTE>
+  </RUN_ATTRIBUTES>
+</RUN>
+</RUN_SET>
