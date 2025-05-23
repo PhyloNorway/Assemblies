@@ -1,6 +1,6 @@
 #!/bin/bash
 
-IMAGE=gricad-registry.univ-grenoble-alpes.fr/leca/projets/malbio/phyloskims
+IMAGE=registry.metabarcoding.org/phyloskims/annot:latest
 #IMAGE=phyloskims/annotate
 TAG=latest
 
