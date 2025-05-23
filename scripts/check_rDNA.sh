@@ -23,7 +23,7 @@
 file="$1"
 
 # ordre attendu
-expected=( "rrn18S" "ITS1" "5.8S rRNA" "ITS2" "rrn28S" )
+expected=( "18S rRNA" "ITS1" "5.8S rRNA" "ITS2" "28S rRNA" )
 
 declare -A ln pos partial
 

@@ -33,7 +33,7 @@ BEGIN {
   grouped_complex_order["Gene Expression"][2] = "Ribosome"
 
   complexes["Photosystem I"] = "psaA psaB psaC psaI psaJ ycf3 ycf4"
-  complexes["Photosystem II"] = "psbA psbB psbC psbD psbE psbF psbH psbN psbZ"
+  complexes["Photosystem II"] = "psbA psbB psbC psbD psbE psbF psbH psbN"
   complexes["Rubisco"] = "rbcL"
   complexes["ATP synthase"] = "atpA atpB atpE atpF atpH atpI"
   complexes["NADH dehydrogenase"] = "ndhA ndhB ndhC ndhD ndhE ndhF ndhG ndhH ndhI ndhJ ndhK"
@@ -41,13 +41,15 @@ BEGIN {
   complexes["RNA polymerase"] = "rpoA rpoB rpoC1 rpoC2"
   complexes["Ribosome"] = "rps2 rps3 rps4 rps7 rps8 rps11 rps12 rps14 rps18 rps19 rpl2 rpl14 rpl16 rpl20 rpl23 rrn16S rrn23S rrn4.5S rrn5S"
 
-  complexe_facultatives["Ribosome"] = "rps15 rps16 rpl22 rpl32 rpl33 rpl36"
+  complexe_facultatives["Photosystem I"] = ""
+  complexe_facultatives["Photosystem II"] = "psbI psbJ psbK psbL psbM psbT psbZ"
   complexe_facultatives["Rubisco"] = ""
-  complexe_facultatives["Photosystem II"] = "psbI psbJ psbK psbL psbM psbT"
   complexe_facultatives["ATP synthase"] = ""
   complexe_facultatives["NADH dehydrogenase"] = ""
-  complexe_facultatives["RNA polymerase"] = "rpoA rpoB rpoC1 rpoC2"
+  complexe_facultatives["RNA polymerase"] = ""
   complexe_facultatives["Cytochrome b6/f"] = "petL"
+  complexe_facultatives["RNA polymerase"] = ""
+  complexe_facultatives["Ribosome"] = "rps15 rps16 rpl22 rpl32 rpl33 rpl36"
 
   split("Ala,Arg,Asn,Asp,Cys,Gln,Glu,Gly,His,Ile,Leu,Lys,fMet,Met,Phe,Pro,Ser,Thr,Trp,Tyr,Val", all_amino_acids, ",")
   for (i in all_amino_acids) {
