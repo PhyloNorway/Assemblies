@@ -1,6 +1,6 @@
 #!/bin/bash
 
-IMAGE=registry.metabarcoding.org/phyloskims/annot:latest
+IMAGE=registry.metabarcoding.org/phyloskims/annot
 #IMAGE=phyloskims/annotate
 TAG=latest
 

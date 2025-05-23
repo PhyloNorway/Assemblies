@@ -2,7 +2,7 @@
 
 SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 METADATA="$SCRIPT_DIR/../data/ena_metadata.csv"
-DORGANNOT=dorgannot
+DORGANNOT="$SCRIPT_DIR/dorgannot.sh"
 CHECK="${SCRIPT_DIR}/check_Chloro.gawk"
 
 
