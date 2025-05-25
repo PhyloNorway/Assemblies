@@ -53,7 +53,8 @@ if [[ -z $specimen ]]; then
 
     if  ${CHECK} "${embl_file}" > "$markdown_file" ; then
         obiconvert -Z "$fasta_file" > "$output_file" \
-        || { rm -f "$output_file"; echo "Failed to convert $embl_file to fasta format."; exit 1;} \
+        || { rm -f "$output_file"; echo "Failed to convert $embl_file to fasta format."; exit 1;} 
+        rm -f "${invalid_file}"
     else
         echo "Invalid Chloroplast" 1>&2
         touch "${invalid_file}"

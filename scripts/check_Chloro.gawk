@@ -7,12 +7,14 @@ BEGIN {
   group_titles["Carbon Fixation"] = "Carbon Fixation"
   group_titles["Electron Transport"] = "Electron Transport"
   group_titles["Gene Expression"] = "Gene Expression"
+  group_titles["Other genes"] = "Other genes"
 
   group_order[1] = "Photosynthesis"
   group_order[2] = "Electron Transport"
   group_order[3] = "ATP Synthesis"
   group_order[4] = "Carbon Fixation"
   group_order[5] = "Gene Expression"
+  group_order[6] = "Other genes"
 
   complex_group["Photosystem II"] = "Photosynthesis"
   complex_group["Photosystem I"] = "Photosynthesis"
@@ -22,6 +24,8 @@ BEGIN {
   complex_group["RNA polymerase"] = "Gene Expression"
   complex_group["Ribosome"] = "Gene Expression"
   complex_group["NADH dehydrogenase"] = "Electron Transport"
+  complex_group["Other genes"] = "Other genes"
+  complex_group["Unknown function CDS"] = "Other genes"
 
   grouped_complex_order["Photosynthesis"][1] = "Photosystem II"
   grouped_complex_order["Photosynthesis"][2] = "Photosystem I"
@@ -31,17 +35,23 @@ BEGIN {
   grouped_complex_order["Carbon Fixation"][1] = "Rubisco"
   grouped_complex_order["Gene Expression"][1] = "RNA polymerase"
   grouped_complex_order["Gene Expression"][2] = "Ribosome"
+  grouped_complex_order["Other genes"][1] = "Other genes"
+  grouped_complex_order["Other genes"][2] = "Unknown function CDS"
 
-  complexes["Photosystem I"] = "psaA psaB psaC psaI psaJ ycf3 ycf4"
+  complexes["Photosystem I"] = "psaA psaB psaC psaI psaJ"
   complexes["Photosystem II"] = "psbA psbB psbC psbD psbE psbF psbH psbN"
   complexes["Rubisco"] = "rbcL"
   complexes["ATP synthase"] = "atpA atpB atpE atpF atpH atpI"
   complexes["NADH dehydrogenase"] = "ndhA ndhB ndhC ndhD ndhE ndhF ndhG ndhH ndhI ndhJ ndhK"
   complexes["Cytochrome b6/f"] = "petA petB petD petG petN"
   complexes["RNA polymerase"] = "rpoA rpoB rpoC1 rpoC2"
-  complexes["Ribosome"] = "rps2 rps3 rps4 rps7 rps8 rps11 rps12 rps14 rps18 rps19 rpl2 rpl14 rpl16 rpl20 rpl23 rrn16S rrn23S rrn4.5S rrn5S"
+  complexes["Ribosome"] = "rps2 rps3 rps4 rps7 rps8 rps11 rps12 rps14 rps18 rps19 rpl2 rpl14 rpl16 rpl20 rrn16S rrn23S rrn4.5S rrn5S"
+  complexes["Other genes"] = "ccsA clpP"
+  complexes["Unknown function CDS"] = ""
 
-  complexe_facultatives["Photosystem I"] = ""
+
+
+  complexe_facultatives["Photosystem I"] = "ycf3 ycf4"
   complexe_facultatives["Photosystem II"] = "psbI psbJ psbK psbL psbM psbT psbZ"
   complexe_facultatives["Rubisco"] = ""
   complexe_facultatives["ATP synthase"] = ""
@@ -49,7 +59,9 @@ BEGIN {
   complexe_facultatives["RNA polymerase"] = ""
   complexe_facultatives["Cytochrome b6/f"] = "petL"
   complexe_facultatives["RNA polymerase"] = ""
-  complexe_facultatives["Ribosome"] = "rps15 rps16 rpl22 rpl32 rpl33 rpl36"
+  complexe_facultatives["Ribosome"] = "rps15 rps16 rpl22 rpl23 rpl32 rpl33 rpl36"
+  complexe_facultatives["Other genes"] = "accD cemA matK"
+  complexe_facultatives["Unknown function CDS"] = "ycf1 ycf2"
 
   split("Ala,Arg,Asn,Asp,Cys,Gln,Glu,Gly,His,Ile,Leu,Lys,fMet,Met,Phe,Pro,Ser,Thr,Trp,Tyr,Val", all_amino_acids, ",")
   for (i in all_amino_acids) {
@@ -323,8 +335,7 @@ END {
           missing = missing gene " "
         }
       }
-      sub(/[ ]+$/, "", tags)
-      sub(/[ ]+$/, "", missing)
+
       facultatifs = complexe_facultatives[complexe]
       facultatif_found = 0
       facultatif_count = 0
@@ -342,6 +353,10 @@ END {
           }
         }
       }
+
+      sub(/[ ]+$/, "", tags)
+      sub(/[ ]+$/, "", missing)
+
       facultatif_status = (facultatif_count > 0) ? sprintf("%d/%d (%.1f%%)", facultatif_found, facultatif_count, (facultatif_found / facultatif_count) * 100) : "–"
       if (facultatif_missing == "") facultatif_missing = "–"
       if (missing == "") {
@@ -352,9 +367,17 @@ END {
         exit_status = 1
         incomplets[complexe] = missing
       }
-      percent = (found / total) * 100
-      printf "| %s | %d/%d (%.1f%%) | %s | %s | %s | %s | %s |\n",
-             complexe, found, total, percent,
+
+      if (total+0 > 0) {
+        found = sprintf("%d/%d (%.1f%%)",
+                        found,total,(found / total) * 100)
+      } else {
+        found = "-"
+        missing = "–"
+        status = ""
+      }  
+      printf "| %s | %s | %s | %s | %s | %s | %s |\n",
+             complexe, found,
              missing, status,
              facultatif_status, facultatif_missing, tags
     }
