@@ -1,0 +1,105 @@
+ID   XXX; XXX; linear; genomic DNA; XXX; XXX; 2156 BP.
+XX
+AC   XXX;
+XX
+DE   {organism} 18S rRNA gene, ITS1 gene, 5.8S rRNA gene and ITS2 gene.
+XX
+FH   Key             Location/Qualifiers
+FT   source          1..2156
+FT                   /organism="{organism}"
+FT                   /mol_type="genomic DNA"
+FT   misc_RNA        IC.rdnanuc_1..2156
+FT                   /gene="ITS2"
+FT                   /note="internal transcribed spacer 2, ITS2"
+FT   rRNA            IC.rdnanuc_1..2156
+FT                   /gene="5.8S rRNA"
+FT                   /product="5.8S ribosomal RNA"
+FT   rRNA            190..2001
+FT                   /gene="18S rRNA"
+FT                   /product="18S ribosomal RNA"
+FT   misc_RNA        2002..2156
+FT                   /gene="ITS1"
+FT                   /note="internal transcribed spacer 1, ITS1"
+XX
+SQ   Sequence 2156 BP; 474 A; 576 C; 626 G; 480 T; 0 other;
+     tcacgccccg cccccccacg ccgcgggtgc gagtccgcct gcgcgacgga gagtgcactc        60
+     cctcccctcc ctcccctgcc cctttcccct ttcccctccc cacgacgggg tgcaccctcc       120
+     tcgcggccgc gcccccagcg cggagttgcg acgcccggcg tctcgccgcc ggcgtgtgcg       180
+     aggatagcta cctggttgat cctgccagta gtcatatgct tgtctcaaag attaagccat       240
+     gcatgtgtaa gtataaactc ttttgtactg tgaaactgcg aatggctcat taaatcagtt       300
+     atagtttctt tgatggtacc ttgctactcg gataaccgta gtaattctag agctaatacg       360
+     tgcaccgact cccgacttcc ggaagggacg catttattag ataaaaggcc gacgcgggct       420
+     cgcccggtga cgcggtgatt catgataact atgcggatcg cacggccctc gcgccggcga       480
+     cgtttcattc aaatttctgc cctatcaact ttcgatggta ggatagaggc ctaccatggt       540
+     ggtgacgggt gacggagaat tagggttcga ttccggagag ggagcctgag aaacggctac       600
+     cacatccaag gaaggcagca ggcgcgcaaa ttacccaatc ccgacacggg gaggtagtga       660
+     caataaataa caataccggg cttttacaag tctggtaatt ggaatgagta caatctaaac       720
+     cccttaacga ggatccattg gagggcaagt ctggtgccag cagccgcggt aattccagct       780
+     ccaatagcgt atatttaagt tgttgcagtt aaaaagctcg tagttggatc tcggggcggg       840
+     gcgggcggtc cgcccctccg ggtgtgcact ggccgccccg ccctttctgc cgggggcgcg       900
+     ctcctggcct tagctggccg ggacgcggat tcggcgatgt tactttgaaa aaattagagt       960
+     gctcaaagca agcctacgct ctgaatacat tagcatggaa taacgtgata ggactctggt      1020
+     cctattgtgt tggtcttcgg gaccggagta atgattgata gggacagttg ggggcattcg      1080
+     tatttcattg tcagaggtga aattcttgga tttatgaaag acgaactact gcgaaagcat      1140
+     ttgccaagga tgttttcgtt aatcaagaac gaaagttggg ggctcgaaga cgatcagata      1200
+     ccgtcctagt ctcaaccgta aacgatgccg actagggatt ggcggatgtt acttcgatga      1260
+     ctccgccagc accttatgag aaatcaaagt ctttgggttc cggggggagt atggtcgcaa      1320
+     ggctgaaact taaaggaatt gacggaaggg caccaccagg agtggagcct gcggcttaat      1380
+     ttgactcaac acggggaaac ttaccaggtc cagacatagc gaggattgac agattgagag      1440
+     ctctttcttg attctatggg tggtggtgca tggccgttct tagttggtgg agtgatttgt      1500
+     ctggttaatt ccgttaacga acgagacctc agcctgctaa ctagttacgc gaaggttccc      1560
+     cttcgcggcc aacttcttag agggactatg gccgtctagg ccatggaagt ttgaggcaat      1620
+     aacaggtctg tgatgccctt agatgttctg ggccgcacgc gcgctacact gacggattca      1680
+     acgagtttac cgcctgggcc gagaggcccg ggtaatcttc tgaaagttcg tcgtgatggg      1740
+     gatagatcat tgcaattatt gatcttcaac gaggaattcc tagtaagcgc gagtcatcag      1800
+     ctcgcgttga ctacgtccct gccctttgta cacaccgccc gtcgctccta ccgattgaat      1860
+     ggtccggtga agttttcgga tcgcggcgac gccggcggtc cgccgccggc gacgtcgtga      1920
+     gaagttcatt aaaccttatc atttagagga aggagaagtc gtaacaaggt ttccgtaggt      1980
+     gaacctgcgg aaggatcatt gacacacgtc cgtccaggaa aacccggcga accgtgcgcg      2040
+     tcccgaccta tgcgaggggc cacgcccgga ggcgtggccg ccggcgccgc cccgctccgc      2100
+     gcaggagccg ggcacgaggg ggccgacgcc ggaggggagg cccgccccgg cgagcc          2156
+//
+ID   XXX; XXX; linear; genomic DNA; XXX; XXX; 1 BP.
+XX
+AC   XXX;
+XX
+DE   {organism} ITS1 gene, 5.8S rRNA gene and ITS2 gene.
+XX
+FH   Key             Location/Qualifiers
+FT   source          1..1
+FT                   /organism="{organism}"
+FT                   /mol_type="genomic DNA"
+FT   misc_RNA        ..
+FT                   /gene="ITS1"
+FT                   /note="internal transcribed spacer 1, ITS1"
+FT   misc_RNA        ..
+FT                   /gene="ITS2"
+FT                   /note="internal transcribed spacer 2, ITS2"
+FT   rRNA            ..
+FT                   /gene="5.8S rRNA"
+FT                   /product="5.8S ribosomal RNA"
+XX
+SQ   Sequence 0 BP;  A;  C;  G;  T; 0 other;
+//
+ID   XXX; XXX; linear; genomic DNA; XXX; XXX; 1 BP.
+XX
+AC   XXX;
+XX
+DE   {organism} ITS1 gene, 5.8S rRNA gene and ITS2 gene.
+XX
+FH   Key             Location/Qualifiers
+FT   source          1..1
+FT                   /organism="{organism}"
+FT                   /mol_type="genomic DNA"
+FT   misc_RNA        ..
+FT                   /gene="ITS1"
+FT                   /note="internal transcribed spacer 1, ITS1"
+FT   misc_RNA        ..
+FT                   /gene="ITS2"
+FT                   /note="internal transcribed spacer 2, ITS2"
+FT   rRNA            ..
+FT                   /gene="5.8S rRNA"
+FT                   /product="5.8S ribosomal RNA"
+XX
+SQ   Sequence 0 BP;  A;  C;  G;  T; 0 other;
+//

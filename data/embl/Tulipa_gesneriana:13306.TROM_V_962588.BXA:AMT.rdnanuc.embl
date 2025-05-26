@@ -1,0 +1,91 @@
+ID   XXX; XXX; linear; genomic DNA; XXX; XXX; 2606 BP.
+XX
+AC   XXX;
+XX
+DE   {organism} 18S rRNA gene, ITS1 gene, 5.8S rRNA gene and ITS2 gene.
+XX
+FH   Key             Location/Qualifiers
+FT   source          1..2606
+FT                   /organism="{organism}"
+FT                   /mol_type="genomic DNA"
+FT   misc_RNA        AMT.rdnanuc_1..2606
+FT                   /gene="ITS2"
+FT                   /note="internal transcribed spacer 2, ITS2"
+FT   rRNA            AMT.rdnanuc_1..2606
+FT                   /gene="5.8S rRNA"
+FT                   /product="5.8S ribosomal RNA"
+FT   rRNA            624..2435
+FT                   /gene="18S rRNA"
+FT                   /product="18S ribosomal RNA"
+FT   misc_RNA        2436..2606
+FT                   /gene="ITS1"
+FT                   /note="internal transcribed spacer 1, ITS1"
+XX
+SQ   Sequence 2606 BP; 592 A; 611 C; 752 G; 651 T; 0 other;
+     ctacgtaccg ggtgccatgt tacatgagtt cggaacaaca tatttcgtgc acggcggtcg        60
+     atacgcaagt tggtggtgct acttaccttt cgtgtgctac tcgttgagcc attgcggttt       120
+     gtcgagtggg atgtggagcg gcggtgtgcc tctggctgct gtgactgtga tacggcacct       180
+     gagtggtttt ggattcgtac gccttggcgg gctccctgtc cctgtgcagc taaccgtcga       240
+     gcggcgatct tgtcattgga gcatctgaac atgatgctca ttatgttgcc tgtgttgcat       300
+     accacgtccg atggaactag gacggttttc atgcgtcttc tcgtcttgct cggctttgta       360
+     cgggttcaag gcggcttcac gcaggacctg cgagccctct cttggggtgg cctttggcgg       420
+     cctctaagta gaacggctag tagggcactg cgagtgcttg cgggtgcggt agatatgtag       480
+     gacacggggc ttcagccctt gtagtcccaa taagcagcaa ctgatctata tcggttgcat       540
+     gacacgaaac gacggtcgac acgcccggag tcccctcttt ggaggggtgc tgtgggtgtt       600
+     gttgctgttg tgaaggacgt gctacctggt tgatcctgcc agtagtcata tgcttgtctc       660
+     aaagattaag ccatgcatgt gtaagtatga accaattcat acggtgaaac tgcgaatggc       720
+     tcattaaatc agttatagtt tgtttgatgg tacatgctac tcggataacc gtagtaattc       780
+     tagagctaat acgtgcaaca aaccccgact tctggaaggg atgcatttat tagataaaag       840
+     gccaacgcgg gctctgcccg gtgttctgat gattcatgat aactcgacgg atcgcacggc       900
+     ccttgtgccg gcgacgcatc attcaaatat ctgccctatc aactttcgat ggtaggatag       960
+     gggcctacca tggtattgac gggtgacgga gaattagggt tcgattccgg agagggagcc      1020
+     tgagaaacgg ctaccacatc caaggaaggc agcaggcgcg caaattaccc aatcctgaca      1080
+     cggggaggta gtgacaataa ataacaatac cgggctcaat gagtctggta attggaatga      1140
+     gtacaatcta aatcccttaa cgaggatcca ttggagggca agtctggtgc cagcagccgc      1200
+     ggtaattcca gctccaatag cgtatattta agttgttgca gttaaaaagc tcgtagttgg      1260
+     atcttgggat gggccggtcg gtcggttcct tcaggttcag aatcggccgt cccgtccctt      1320
+     ctgccggcga tgcgctcctg gccttcactg gccgggtcgt tcctccggcg ctgttacttt      1380
+     gaagaaatta gagtgctcaa agcaagccca agctctgtat acattagcat gggataacac      1440
+     tacaggattt cggtcctatt gtgttggcct tcgggatcgg agtaatgatt aagagggaca      1500
+     gtcgggggca ttcgtatttc atagtcagag gtgaaattct tggatttatg aaagacgaac      1560
+     aactgcgaaa gcatttgcca aggatgtttt cattaatcaa gaacgaaagt tgggggctcg      1620
+     aagacgatca gataccgtcc tagtctcaac cataaacgat gccgaccagg gatcggcgga      1680
+     tgttgctttt aggactccgc cggcacctta tgagaaatca aagtttttgg gttccggggg      1740
+     gagtatggtc gcaaggctga aacttaaagg aattgacgga agggcaccac caggagtgga      1800
+     gcctgcggct taatttgact caacacgggg aaacttacca ggtccagaca tagtaaggat      1860
+     tgacagactg agagctcttt cttgattcta tgggtggtgg tgcatggccg ttcttagttg      1920
+     gtggagcgat ttgtctggtt aattccgtta acgaacgaga cctcagcctg ctaactagct      1980
+     acgcggaggc atccctccgc ggccagcttc ttagagggac tattgccgtt taggcaacgg      2040
+     aagtttgagg caataacagg tctgtgatgc ccttagatgt tctgggccgc acgcgcgcta      2100
+     cactgatgta ttcaacgagt ctatagccta ggccgacagg cccgggtaat ctttgaaaat      2160
+     ttcatcgtga tggggataga tcattgcaat tgttggtctt caacgaggaa ttcctagtaa      2220
+     gcgcgagtca tcagctcgcg ttgactacgt ccctgccctt tgtacacacc gcccgtcgct      2280
+     cctaccgatt gaatggtccg gtgaagtgtt cggatcgcgg cgacgcgagc ggttcgccgc      2340
+     ccgtgacgtc gcaagaagtc cactgaacct tatcatttag aggaaggaga agtcgtaaca      2400
+     aggtttccgt aggtgaacct gcggaaggat cattgtcgat acccgaccga aagaccgtga      2460
+     acttgtaaac ggatgccacc agggttgtcg ggctagctcg gcctccctgg aaccctgccg      2520
+     ccccctttcg gagcgacctt gtgttgcacg tacgggggtg gtacgggata acgaaccccc      2580
+     ggcgctgcat gcgccaagga acatat                                           2606
+//
+ID   XXX; XXX; linear; genomic DNA; XXX; XXX; 1 BP.
+XX
+AC   XXX;
+XX
+DE   {organism} ITS1 gene, 5.8S rRNA gene and ITS2 gene.
+XX
+FH   Key             Location/Qualifiers
+FT   source          1..1
+FT                   /organism="{organism}"
+FT                   /mol_type="genomic DNA"
+FT   misc_RNA        ..
+FT                   /gene="ITS1"
+FT                   /note="internal transcribed spacer 1, ITS1"
+FT   misc_RNA        ..
+FT                   /gene="ITS2"
+FT                   /note="internal transcribed spacer 2, ITS2"
+FT   rRNA            ..
+FT                   /gene="5.8S rRNA"
+FT                   /product="5.8S ribosomal RNA"
+XX
+SQ   Sequence 0 BP;  A;  C;  G;  T; 0 other;
+//
