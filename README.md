@@ -57,7 +57,7 @@ The names of the files follow this pattern :
 - Herbarium code is the herbarium number where the specimen was taken
   - It follows the format: 
     - `TROM_V_####` for Tromsoe herbarium
-    - `SB###` for Oslo herbarium ???
+    - `SB###` for Svalbard seed vault
 - Library is the name of the sequencing library used to generate the sequence 
   - It's a two parts name separated by an underscore, each part is composed of two
     three capital letters.
