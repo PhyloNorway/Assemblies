@@ -1,2 +1,0 @@
-❌ Missing feature: 5.8S rRNA
-❌ Out of order: ITS2 at line 12 after previous at 107
